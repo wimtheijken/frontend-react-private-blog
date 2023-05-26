@@ -4,7 +4,7 @@ import './Navigatie.css';
 
 function Navigatie( { isAuth, toggleAuth } ) {
     const navigate = useNavigate();
-    console.log(isAuth)
+
     return (
         <div className="navigatiebalk">
             <ul className="navigatie">

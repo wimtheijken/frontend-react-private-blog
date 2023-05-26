@@ -5,24 +5,17 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Input from "../../componenten/Input";
 import './Login.css';
+import blogPost from "../blogpost/BlogPost";
 
 function Login( { isAuth, toggleAuth } ) {
 
-    // console.log(users)
     const navigate = useNavigate();
-
-    // console.log(isAuth)
     function handleFormSubmit( { name, password }  ) {
-        console.log("\nstart")
-        console.log(name)
-        console.log(password)
-        console.log(isAuth)
         { users.map((item) => {
             name === item.name && password === item.password
             && toggleAuth(true)
         }) }
-        console.log(isAuth) // hier is isAuth 'nog' niet
-        isAuth ? navigate("/blogposts") : navigate("/") // ik navigeer hier dus naar restricted maar ondertussen ben ik wel ingelogd
+        navigate("/blogposts")
     }
 
     const { register, handleSubmit } = useForm()
