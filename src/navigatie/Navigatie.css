@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.navigatiebalk {
+    background-color: #CA5A1A;
+}
+
+.navigatie {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    list-style: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    gap: 100px;
+    padding-right: 50px;
+}
+
+.default-menu-link {
+    color: white;
+    text-decoration: none;
+
+}
+
+.active-menu-link {
+    color: white;
+    text-decoration: underline;
+}
