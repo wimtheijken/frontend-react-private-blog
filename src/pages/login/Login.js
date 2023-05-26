@@ -2,13 +2,10 @@ import React from 'react';
 import users from '../../data/users.json';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
 import Input from "../../componenten/Input";
 import './Login.css';
-import blogPost from "../blogpost/BlogPost";
 
 function Login( { isAuth, toggleAuth } ) {
-
     const navigate = useNavigate();
     function handleFormSubmit( { name, password }  ) {
         { users.map((item) => {
