@@ -10,6 +10,7 @@ import PageNotFound from "./componenten/PageNotFound";
 import PrivateRoute from "./componenten/PrivateRoute";
 import { Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
+import Inlog from "./pages/login/Inlog";
 
 function App() {
   // We houden in de state bij of iemand is "ingelogd" (simpele versie)
@@ -31,6 +32,7 @@ function App() {
             </Route>
             <Route path="/restricted" element={ <Restricted/> }/>
             <Route path="/uitloggen" element={ <Uitloggen/> }/>
+            <Route path="/inlog" element={ <Inlog/> }/>
             <Route path="*" element={ <PageNotFound/> }/>
         </Routes>
     </div>

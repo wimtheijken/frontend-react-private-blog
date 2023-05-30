@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import './Blog.css';
 
 function Blog() {
-    console.log(posts)
+    // console.log(posts)
     return (
         <div className="outer-container">
             <div className="inner-container">

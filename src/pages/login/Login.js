@@ -1,19 +1,30 @@
-import React from 'react';
+import React, {useContext, useCallback, useState} from 'react';
 import users from '../../data/users.json';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from "react-router-dom";
+
+
+import { useEffect } from "react";
 import Input from "../../componenten/Input";
 import './Login.css';
 
 function Login( { isAuth, toggleAuth } ) {
     const navigate = useNavigate();
+    const [ check, setCheck ] = useState(false);
+
     function handleFormSubmit( { name, password }  ) {
+        setCheck(true)
+        // let authorisation = false
         { users.map((item) => {
-            name === item.name && password === item.password
-            && toggleAuth(true)
+            name === item.name && password === item.password && toggleAuth(true)
         }) }
-        navigate("/blogposts")
     }
+
+    useEffect(() => {
+        if (check) {
+            isAuth ? navigate('/blogposts') : navigate('/inlog')
+        }
+    });
 
     const { register, handleSubmit } = useForm()
 
