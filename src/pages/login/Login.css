@@ -1,0 +1,30 @@
+.button {
+    font-size: 18px;
+    width: 100px;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.submit {
+    font-size: 18px;
+    width: 100px;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+
+.input {
+    width: 200px;
+    padding: 5px;
+    margin-block: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.inlog {
+    visibility: hidden;
+}
